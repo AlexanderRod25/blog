@@ -24,6 +24,10 @@
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')
 
+            @session('status')
+                <div> {{ $value }} </div>
+            @endsession
+
             <!-- Page Heading -->
             @if (isset($header))
                 <header class="bg-white shadow">
@@ -37,6 +41,7 @@
             <main>
                 {{ $slot }}
             </main>
+
             @isset($sidebar)
                 <div id="sidebar">
                     <h3>Sidebar</h3>
