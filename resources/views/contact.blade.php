@@ -2,9 +2,12 @@
     <x-slot name="metaTitle">contacto</x-slot>
     <x-slot name="metaDescription">contact description</x-slot>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Contacto') }}
-        </h2>
+        @include('partials.navigation')
+        <div class="mx-auto mt-4 max-w-6xl">
+            <h1 class="mt-4 mb-8 text-center font-serif text-4xl font-extrabold text-sky-600 md:text-5xl">
+                {{ __('Contacto') }}
+            </h1>
+        </div>
     </x-slot>
-    @include('partials.navigation')
+
 </x-app-layout>
